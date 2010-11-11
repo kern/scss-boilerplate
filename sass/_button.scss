@@ -1,0 +1,44 @@
+@mixin button-background($start, $end) {
+  @if $start == $end {
+    background: $start;
+  } @else {
+    @include vertical-gradient($start, $end);
+  }
+}
+
+@mixin block-button($width, $height, $background, $background-darken: 10%, $border-darken: 20%, $radius: 3px) {
+  @extend .box-model-reset;
+  @extend .clickable;
+  @include border-radius($radius);
+  @include box-sizing(content-box);
+  @include button-background($background, darken($background, $background-darken));
+  
+  $width: $width - 2px;
+  $height: $height - 2px;
+  
+  display: block;
+  width: $width;
+  height: $height;
+  border: 1px solid darken($background, $border-darken);
+  line-height: $height;
+  text-align: center;
+}
+
+@mixin inline-button($padding, $height, $background, $background-darken: 10%, $border-darken: 20%, $radius: 3px) {
+  @extend .box-model-reset;
+  @extend .clickable;
+  @include border-radius($radius);
+  @include box-sizing(content-box);
+  @include button-background($background, darken($background, $background-darken));
+  
+  $height: $height - 2px;
+  
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  height: $height;
+  border: 1px solid darken($background, $border-darken);
+  padding: 0 $padding;
+  line-height: $height;
+  text-align: center;
+}
