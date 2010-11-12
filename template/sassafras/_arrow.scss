@@ -1,0 +1,18 @@
+@mixin arrow($direction, $width, $color) {
+  @extend .no-content;
+  position: absolute;
+  display: block;
+  z-index: 1;
+  border-width: $length;
+  border-style: solid;
+  
+  @if $direction == down {
+    border-color: $color transparent transparent transparent;
+  } @else if $direction == left {
+    border-color: transparent $color transparent transparent;
+  } @else if $direction == up {
+    border-color: transparent transparent $color transparent;
+  } @else if $direction == right {
+    border-color: transparent transparent transparent $color;
+  }
+}

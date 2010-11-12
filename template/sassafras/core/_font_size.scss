@@ -1,6 +1,4 @@
-$line-height: 18px !default;
-
-@mixin font-size($size) {
+@mixin font-size($size, $line-height: 18px) {
   font-size: $size;
   line-height: ceil($size / $line-height) * $line-height;
 }
