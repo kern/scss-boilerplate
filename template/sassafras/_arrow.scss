@@ -3,7 +3,7 @@
   position: absolute;
   display: block;
   z-index: 1;
-  border-width: $length;
+  border-width: $width;
   border-style: solid;
   
   @if $direction == down {
