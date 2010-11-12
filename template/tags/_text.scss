@@ -1,21 +1,21 @@
 a {
-  
+  @extend .link-type;
 }
 
 em {
-  
+  font-style: italic;
 }
 
 strong {
-  
+  font-weight: bold;
 }
 
 small {
-  
+  @extend .note-type;
 }
 
 s {
-  
+  text-decoration: line-through;
 }
 
 cite {
@@ -63,11 +63,11 @@ sup {
 }
 
 i {
-  
+  font-style: italic;
 }
 
 b {
-  
+  font-weight: bold;
 }
 
 mark {

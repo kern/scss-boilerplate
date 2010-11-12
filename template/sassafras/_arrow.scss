@@ -1,5 +1,6 @@
 @mixin arrow($direction, $width, $color) {
   @extend .no-content;
+  @extend .hide-text;
   position: absolute;
   display: block;
   z-index: 1;
