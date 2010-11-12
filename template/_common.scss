@@ -2,7 +2,6 @@
 @include reset;
 
 @import 'helpers';
-@import 'specific';
 
 @import 'style_guide/palette';
 @import 'style_guide/fonts';
@@ -22,3 +21,6 @@
 @import 'tags/sections';
 @import 'tags/tabular';
 @import 'tags/text';
+
+@import 'specific';
+@import 'temporary';
