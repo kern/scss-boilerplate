@@ -1,12 +1,18 @@
-sassafras
+scss-boilerplate
 =========
 
-Simple SASS/SCSS toolkit
+Simple SCSS boilerplate
+
+Usage
+-----
+
+ * Copy all the files in `scss/` into your SCSS directory.
+ * Done.
 
 Author
 ------
 
-Sassafras is written by [Alexander Kern](http://kernpedia.com).
+scss-boilerplate is written by [Alexander Kern](http://kernpedia.com).
 
 License
 -------
