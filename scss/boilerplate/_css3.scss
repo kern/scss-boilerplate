@@ -2,6 +2,7 @@
   -moz-border-radius: $radius;
   -webkit-border-radius: $radius;
   border-radius: $radius;
+  -webkit-background-clip: padding-box !important;
 }
 
 @mixin box-shadow($shadow) {
